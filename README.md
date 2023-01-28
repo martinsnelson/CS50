@@ -10,8 +10,29 @@ cat > filename.extension
 # Edit file, name editor and name file
 Ex: notepad hello.c
 
-# Plus WSL
+# Plus Vim/Neovim
+sudo pacman -S neovim;
 
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+
+# Plus add path cargo to lvim
+export PATH=~/.cargo/bin:~/.local/bin:$PATH
+
+# Plus install Git
+sudo pacman -S git
+
+# Plus install cURL://
+pacman -Sy curl
+pacman -Qi curl
+
+# Plus install npm
+sudo pacman -S yarn npm
+
+# Plus Git
+sudo pacman -S rust
+sudo pacman -S base-devel
+
+# Plus WSL:
 # Install WSL in powershell
 wsl --install
 
