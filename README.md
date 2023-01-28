@@ -21,6 +21,18 @@ export PATH=~/.cargo/bin:~/.local/bin:$PATH
 # Plus install Git
 sudo pacman -S git
 
+# Plus install base-devel
+pacman -S --needed git base-devel
+
+# Plus install yay
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+# Plus construir package yay
+makepkg -si
+
 # Plus install cURL://
 pacman -Sy curl
 pacman -Qi curl
